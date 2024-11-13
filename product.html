@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대진섬유 - 제품 소개</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* 기본 스타일 설정 */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #004080; /* Corporate blue */
+            color: #ffffff;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 30px;
+            margin-left: 30px;
+        }
+
+        header h1 a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        nav a {
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin-left: 20px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #0056b3; /* Darker blue for hover */
+        }
+
+        section {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        #products {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        #products h2 {
+            font-size: 28px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            text-align: left; /* Align left for better readability */
+            color: #004080; /* Title color */
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px; /* 카드 간의 간격 */
+        }
+
+        .product-card {
+            background-color: #f1f1f1;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(30% - 20px); /* 3열로 배치 */
+            max-width: calc(30% - 20px); /* 최대 너비 설정 */
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s; /* Improved transition */
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px); /* Slight lift effect */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px; /* Space between image and text */
+        }
+
+        #product-manufacturing-process {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .process-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px; /* 이미지와 텍스트 간격 */
+            margin-top: 20px;
+        }
+
+        .process-image {
+            width: 50%;  /* 이미지의 너비를 50%로 조절 */
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .process-text {
+            width: 45%; /* 나머지 공간에 텍스트 배치 */
+            text-align: left;
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 5px;
+        }
+
+        footer a {
+            color: #ddd;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+
+        /* 반응형 디자인을 위한 미디어 쿼리 */
+        @media (max-width: 768px) {
+            .process-container {
+                flex-direction: column; /* 작은 화면에서는 이미지와 텍스트를 세로로 배치 */
+            }
+
+            .process-image, .process-text {
+                width: 100%; /* 작은 화면에서는 전체 너비로 설정 */
+            }
+            
+            .products {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .product-card {
+                max-width: 90%;
+            }
+        }
+
+        /* 애니메이션을 위한 기본 스타일 */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 0.6s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 헤더 -->
+    <header>
+        <h1><a href="home.html">대진섬유</a></h1>
+        <nav>
+            <a href="home.html">회사 소개</a>
+            <a href="product.html">제품 소개</a>
+            <a href="contact.html">문의하기</a>
+            <a href="map.html">찾아오는 길</a>
+        </nav>
+    </header>
+
+    <!-- 제품 소개 섹션 -->
+    <section id="products">
+        <h2 class="fade-in">제품 소개</h2>
+        <div class="products">
+            <!-- 제품 1 -->
+            <div class="product-card fade-in">
+                <img src="E:/company/picture/cotton.png" alt="원단1">
+                <h3>면 원단</h3>
+                <p>우수한 통기성과 부드러움을 자랑하는 면 원단.</p>
+            </div>
+            <!-- 제품 2 -->
+            <div class="product-card fade-in">
+                <img src="E:/company/picture/polyester.png" alt="원단2">
+                <h3>폴리에스터 원단</h3>
+                <p>내구성이 뛰어난 폴리에스터 원단으로 다양한 활용이 가능합니다.</p>
+            </div>
+            <!-- 제품 3 -->
+            <div class="product-card fade-in">
+                <img src="E:/company/picture/Linen.png" alt="원단3">
+                <h3>린넨 원단</h3>
+                <p>자연스럽고 시원한 느낌을 주는 린넨 원단.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 제품 소개 섹션2 -->
+    <section id="products">
+        <h2 class="fade-in">제품 소개</h2>
+        <div class="products">
+            <!-- 제품 4 -->
+            <div class="product-card fade-in">
+                <img src="E:/company/picture/cotton.png" alt="원단1">
+                <h3>면 원단</h3>
+                <p>우수한 통기성과 부드러움을 자랑하는 면 원단.</p>
+            </div>
+            <!-- 제품 5 -->
+            <div class="product-card fade-in">
+                <img src="E:/company/picture/polyester.png" alt="원단2">
+                <h3>폴리에스터 원단</h3>
+                <p>내구성이 뛰어난 폴리에스터 원단으로 다양한 활용이 가능합니다.</p>
+            </div>
+            <!-- 제품 6 -->
+            <div class="product-card fade-in">
+                <img src="E:/company/picture/Linen.png" alt="원단3">
+                <h3>린넨 원단</h3>
+                <p>자연스럽고 시원한 느낌을 주는 린넨 원단.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 제품 제조 과정 섹션 -->
+    <section id="product-manufacturing-process">
+        <h2 class="fade-in">제품 제조 과정</h2>
+        <div class="process-container">
+            <img src="E:/company/picture/product_manufacturing_process_image.png" alt="원단제조과정" class="process-image fade-in">
+            <div class="process-text fade-in">
+                <h3>원단 제조 과정</h3>
+                <h4>원사 재직 업체에서 생지 구매</h4>
+                <p>원단 제조는 원사 재직 업체에서 생지(가공되지 않은 원단)를 구매하는 것으로 시작합니다.</p>
+                <h4>염색 전 전처리 과정</h4>
+                <p>염색하기 전에 생지는 염색이 잘 되도록 전처리 과정을 거쳐 준비됩니다.</p>
+                <h4>염색 및 건조 작업</h4>
+                <p>전처리 후, 생지는 염색 공정에 들어가고, 염색이 완료된 원단은 건조 및 드라이 작업을 통해 색을 고정시키고 안정성을 확보합니다.</p>
+                <h4>2차 가공</h4>
+                <p>건조 작업 후 원단은 2차 가공을 진행합니다. 2차 가공에는 엠보싱, 포일 작업, 전사 프린팅, 나염 등 다양한 공정이 포함됩니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer>
+        <!-- 회사 정보 섹션 중앙 배치 -->
+        <div style="background-color: #003366; padding: 0px; text-align: center;">
+            <h4 style="color: white;">대진섬유</h4>
+            <p style="color: #ddd;">사업자 등록번호: 123-45-67890</p>
+            <p style="color: #ddd;">주소: 경기 양주시 은현면 은현로 205, 대진 섬유</p>
+            <p style="color: #ddd;">전화: 02-123-4567 | 이메일: info@daejintextile.co.kr</p>
+        </div>
+
+        <!-- 저작권 및 법적 정보 -->
+        <div style="background-color: #002244; padding: 10px; text-align: center;">
+            <p style="color: #ddd;">&copy; 2024 대진섬유. All rights reserved. | <a href="privacy.html" style="color: #ddd; text-decoration: none;">개인정보처리방침</a> | <a href="terms.html" style="color: #ddd; text-decoration: none;">이용약관</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // 문서가 로드될 때 실행
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('section, .product-card, .process-text');
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1 // 10%가 보일 때
+            };
+
+            const observerCallback = (entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // 섹션이 화면에 보일 때 'fade-in' 클래스 추가
+                        entry.target.classList.add('fade-in');
+                    }
+                });
+            };
+
+            const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대진섬유 - 찾아오는 길</title>
+    <style>
+        /* 기본 스타일 설정 */
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        /* 헤더 스타일 */
+        header {
+            background-color: #004085;
+            color: white;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        header h1 a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav {
+            display: flex;
+        }
+
+        header nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin-left: 15px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        header nav a:hover {
+            background-color: #002952;
+        }
+
+        /* 찾아오는 길 섹션 스타일 */
+        #map {
+            background-color: #ffffff;
+            padding: 50px;
+            margin: 40px auto;
+            max-width: 900px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        #map h2 {
+            font-size: 30px;
+            color: #004085;
+            margin-bottom: 30px;
+        }
+
+        #map p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        /* 지도 스타일 */
+        iframe {
+            border: 0;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 700px;
+            height: 450px;
+            margin-top: 20px;
+        }
+
+        /* 푸터 스타일 */
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 5px;
+        }
+
+        footer a {
+            color: #ddd;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        /* 반응형 디자인을 위한 미디어 쿼리 */
+        @media (max-width: 768px) {
+            header {
+                padding: 15px 20px;
+            }
+
+            #map {
+                padding: 30px;
+            }
+
+            #map h2 {
+                font-size: 24px;
+            }
+
+            #map p {
+                font-size: 16px;
+            }
+
+            iframe {
+                height: 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 헤더 -->
+    <header>
+        <h1><a href="home.html">대진섬유</a></h1>
+
+        <nav>
+            <a href="home.html">회사 소개</a>
+            <a href="product.html">제품 소개</a>
+            <a href="contact.html">문의하기</a>
+            <a href="map.html">찾아오는 길</a>
+        </nav>
+    </header>
+
+    <!-- 찾아오는 길 섹션 -->
+    <section id="map">
+        <h2>찾아오는 길</h2>
+        <p><strong>주소:</strong> 경기 양주시 은현면 은현로 205</p>
+
+        <h3>대중교통 이용 방법</h3>
+        <p><strong>지하철 + 버스:</strong></p>
+        <p>서울 지하철 1호선 <strong>덕정역</strong> 또는 <strong>양주역</strong>에서 하차 후, <br>
+           77번 또는 30-2번 버스를 타고 은현면사무소 정류장에서 하차합니다. <br>
+           정류장에서 도보 약 10분 거리에 위치해 있습니다.</p>
+
+        <h3>자가용 이용 방법</h3>
+        <p><strong>서울에서 출발:</strong></p>
+        <p>구리-포천 고속도로(서울양양고속도로)를 타고 <strong>양주 IC</strong>에서 나와<br>
+           37번 국도를 따라 은현면 방면으로 이동합니다. <br>
+           은현면사무소를 지나 약 5분 후 은현로를 따라 이동하면 대진섬유 본사에 도착합니다.</p>
+        
+        <h3>주차 안내</h3>
+        <p>본사 건물에 방문객을 위한 <strong>주차 공간</strong>이 마련되어 있습니다.</p>
+
+        <!-- 구글 맵 iframe -->
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3148.863588945031!2d127.02048687555559!3d37.886872705695396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cdcbebb065d9d%3A0x7cbdc97cb58c8748!2z6rK96riw64-EIOyWkeyjvOyLnCDsnYDtmITrqbQg7J2A7ZiE66GcIDIwNQ!5e0!3m2!1sko!2skr!4v1727867606581!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+
+    <!-- 푸터 -->
+    <footer>
+        <!-- 회사 정보 섹션 중앙 배치 -->
+        <div style="background-color: #003366; padding: 0px; text-align: center;">
+            <h4 style="color: white;">대진섬유</h4>
+            <p style="color: #ddd;">사업자 등록번호: 123-45-67890</p>
+            <p style="color: #ddd;">주소: 경기 양주시 은현면 은현로 205, 대진 섬유</p>
+            <p style="color: #ddd;">전화: 02-123-4567 | 이메일: info@daejintextile.co.kr</p>
+        </div>
+
+        <!-- 저작권 및 법적 정보 -->
+        <div style="background-color: #002244; padding: 10px; text-align: center;">
+            <p style="color: #ddd;">&copy; 2024 대진섬유. All rights reserved. | <a href="privacy.html" style="color: #ddd; text-decoration: none;">개인정보처리방침</a> | <a href="terms.html" style="color: #ddd; text-decoration: none;">이용약관</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

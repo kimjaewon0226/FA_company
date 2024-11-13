@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대진섬유 - 문의하기</title>
+    <style>
+        /* 기본 스타일 설정 */
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        /* 헤더 스타일 */
+        header {
+            background-color: #004080; /* Corporate blue */
+            color: #ffffff;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 30px;
+            margin-left: 30px;
+        }
+
+        header h1 a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        nav a {
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin-left: 20px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #0056b3; /* Darker blue for hover */
+        }
+
+        /* 문의하기 섹션 스타일 */
+        #contact {
+            background-color: #ffffff;
+            padding: 40px;
+            margin: 40px auto;
+            max-width: 900px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        /* 박스 스타일 */
+        .box {
+            background-color: #f1f1f1;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ddd;
+        }
+
+        #contact h2 {
+            font-size: 28px;
+            color: #003366;
+            margin-bottom: 25px;
+            text-align: center;
+            margin-top: -10px;
+        }
+
+        #contact h3 {
+            font-size: 22px;
+            color: #003366;
+            margin-bottom: 15px;
+        }
+
+        #contact p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        #contact strong {
+            color: #003366;
+        }
+
+        #contact a {
+            color: #003366;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* 푸터 스타일 */
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 5px;
+        }
+
+        footer a {
+            color: #ddd;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+
+        /* 반응형 디자인을 위한 미디어 쿼리 */
+        @media (max-width: 768px) {
+            #contact {
+                padding: 20px;
+            }
+
+            #contact h2 {
+                font-size: 24px;
+            }
+
+            form {
+                gap: 10px;
+            }
+
+            .box {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 헤더 -->
+    <header>
+        <h1><a href="home.html">대진섬유</a></h1>
+
+        <nav>
+            <a href="home.html">회사 소개</a>
+            <a href="product.html">제품 소개</a>
+            <a href="contact.html">문의하기</a>
+            <a href="map.html">찾아오는 길</a>
+        </nav>
+    </header>
+
+    <!-- 문의하기 섹션 -->
+    <section id="contact">
+        <h2>문의하기</h2>
+
+        <!-- 연락처 정보 박스 -->
+        <div class="box">
+            <h3>연락처 정보</h3>
+            <p><strong>이메일:</strong> 803209@daum.net</p>
+            <p><strong>전화번호:</strong> 02-1234-5678</p>
+            <p><strong>FAX:</strong> 02-1234-5678</p>
+            <p><strong>주소:</strong> 경기도 양주시 은현면 은현로 205</p>
+        </div>
+
+        <!-- 간단한 문구 박스 -->
+        <div class="box">
+            <h3>문의 안내</h3>
+            <p>대진섬유는 고객님의 문의를 환영합니다. 질문이나 요청 사항이 있으시면 위 연락처를 통해 연락해 주세요.</p>
+        </div>
+
+        <!-- FAQ 박스 -->
+        <div class="box">
+            <h3>자주 묻는 질문 (FAQ)</h3>
+            <p><strong>Q1: 제품 샘플을 요청할 수 있나요?</strong></p>
+            <p>A: 네, 대진섬유의 제품 샘플을 요청하실 수 있습니다. 이메일로 요청해 주세요.</p>
+
+            <p><strong>Q2: 배송 기간은 얼마나 걸리나요?</strong></p>
+            <p>A: 제품에 따라 다르지만, 일반적으로 주문 후 7~10일 이내에 배송됩니다.</p>
+        </div>
+
+        <!-- 운영 시간 박스 -->
+        <div class="box">
+            <h3>운영 시간</h3>
+            <p>평일: 09:00 - 18:00<br>주말 및 공휴일: 휴무</p>
+        </div>
+
+        <!-- 개인정보 처리 방침 박스 -->
+        <div class="box">
+            <p>문의해 주신 내용은 대진섬유의 <a href="privacy.html">개인정보 처리 방침</a>에 따라 보호됩니다.</p>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer>
+        <!-- 회사 정보 섹션 중앙 배치 -->
+        <div style="background-color: #003366; padding: 0px; text-align: center;">
+            <h4 style="color: white;">대진섬유</h4>
+            <p style="color: #ddd;">사업자 등록번호: 123-45-67890</p>
+            <p style="color: #ddd;">주소: 경기 양주시 은현면 은현로 205, 대진 섬유</p>
+            <p style="color: #ddd;">전화: 02-123-4567 | 이메일: info@daejintextile.co.kr</p>
+        </div>
+
+        <!-- 저작권 및 법적 정보 -->
+        <div style="background-color: #002244; padding: 10px; text-align: center;">
+            <p style="color: #ddd;">&copy; 2024 대진섬유. All rights reserved. | <a href="privacy.html" style="color: #ddd; text-decoration: none;">개인정보처리방침</a> | <a href="terms.html" style="color: #ddd; text-decoration: none;">이용약관</a></p>
+        </div>
+    </footer>
+</body>
+</html>
